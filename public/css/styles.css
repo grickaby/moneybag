@@ -1,0 +1,53 @@
+/* 
+    Created on : Jan 25, 2017, 4:44:15 PM
+    Author     : grick
+*/
+/* 
+    Created on : Jan 25, 2017, 4:49:18 PM
+    Author     : grick
+*/
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed");
+*,
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Fira Sans Condensed", sans-serif;
+  background-color: #CEE332; }
+
+#login {
+  text-align: center;
+  width: 35%;
+  height: 27%;
+  border: 1px solid #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 7px;
+  margin: auto; }
+
+#login #username,
+#login #password {
+  width: 40%;
+  padding: 7px;
+  margin-bottom: 7px; }
+
+#login .btn {
+  /* Normalize */
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  padding: 7px 25px;
+  color: #fafbfc;
+  background-color: #6B7F8C; }
+  #login .btn:hover {
+    background-color: #a4b1b9; }
+
+/*# sourceMappingURL=styles.css.map */
