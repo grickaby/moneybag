@@ -20,8 +20,8 @@ CREATE TABLE moneybag.mb_drivers (
     username VARCHAR(255),
     passwd VARCHAR(255),
     address TEXT,
-    pay_rate DECIMAL(50,8),
-    pay_ratesun DECIMAL(50,8),
+    pay_rate DECIMAL(50,3),
+    pay_ratesun DECIMAL(50,3),
     reg_date TIMESTAMP,
     PRIMARY KEY (id)
 );
