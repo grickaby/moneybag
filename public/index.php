@@ -1,8 +1,3 @@
-<?php
-require 'assets/user_login.php';
-
-getDrivers($db);
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,6 +6,11 @@ getDrivers($db);
         <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+        <?php
+        require 'assets/user_login.php';
+
+        $userLogin->getDrivers($db);
+        ?>
         <div id="login">
             <h1>Moneybag</h1>
             <br/>

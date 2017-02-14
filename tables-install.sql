@@ -23,6 +23,7 @@ CREATE TABLE moneybag.mb_drivers (
     pay_rate DECIMAL(50,3),
     pay_ratesun DECIMAL(50,3),
     reg_date TIMESTAMP,
+    last_login TIMESTAMP,
     PRIMARY KEY (id)
 );
 
