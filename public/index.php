@@ -7,16 +7,14 @@
     </head>
     <body>
         <?php
-        require 'assets/user_login.php';
-
-        $userLogin->getDrivers($db);
+        require 'assets/class_user.php';
         ?>
         <div id="login">
             <h1>Moneybag</h1>
             <br/>
-            <form>
-                <input type="text" name="username" id="username" value="" placeholder="Driver Number"/><br/>
-                <input type="password" name="password" id="password" placeholder="Password" /><br/>
+            <form method="post">
+                <input type="text" name="username" id="username" placeholder="Driver Number" required/><br/>
+                <input type="password" name="password" id="password" placeholder="Password"  required/><br/>
                 <input type="submit" name="submit" value="Login" class="btn" />
                 <input name="rememberMe" id="rememberMe" type="checkbox" value="1" />&nbsp;Remember me
             </form>
