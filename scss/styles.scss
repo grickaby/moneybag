@@ -55,3 +55,12 @@ body {
 #login .btn {
     @include btn($blue);
 }
+ui-autocomplete {
+    max-height: 100px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+  }
+.ui-autocomplete-loading {
+    background: white url("../images/spinner.gif") right center no-repeat;
+  }

@@ -50,4 +50,13 @@ body {
   #login .btn:hover {
     background-color: #a4b1b9; }
 
+ui-autocomplete {
+  max-height: 100px;
+  overflow-y: auto;
+  /* prevent horizontal scrollbar */
+  overflow-x: hidden; }
+
+.ui-autocomplete-loading {
+  background: white url("../images/spinner.gif") right center no-repeat; }
+
 /*# sourceMappingURL=styles.css.map */

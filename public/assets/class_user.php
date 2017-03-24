@@ -1,12 +1,17 @@
 <?php
 
+/* 
+ * This class handles user actions. (login, logout)
+ */
+
+
 require 'assets/class_dbconnection.php';
 
 class User {
 
     private $db;
 
-    public function __construct($Conn) {
+    public function __construct($Conn = '') {
         $this->db = $Conn;
     }
 

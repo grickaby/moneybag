@@ -30,6 +30,7 @@ CREATE TABLE moneybag.mb_drivers (
 /* CLIENTS TABLE */
 CREATE TABLE moneybag.mb_clients (
     id INT NOT NULL AUTO_INCREMENT,
+    c_name VARCHAR(255),
     c_number VARCHAR(255),
     c_address TEXT,
     c_city VARCHAR(255),
@@ -39,15 +40,6 @@ CREATE TABLE moneybag.mb_clients (
     secondary_phone VARCHAR(255),
     fax_number VARCHAR(255),
     email VARCHAR(255),
-    price_num1dslclr DECIMAL(50,8),
-    price_num1dsldye DECIMAL(50,8),
-    price_num2dslclr DECIMAL(50,8),
-    price_num2dsldye DECIMAL(50,8),
-    price_num2dslpdfclr DECIMAL(50,8),
-    price_num2dslpdfdye DECIMAL(50,8),
-    price_gasprem DECIMAL(50,8),
-    price_gasmid DECIMAL(50,8),
-    price_gasnl DECIMAL(50,8),
     price_gas DECIMAL(50,8),
     price_distillate DECIMAL(50,8),
     lastupdate_date DATE,
@@ -66,6 +58,15 @@ CREATE TABLE moneybag.mb_terminals (
     term_zip VARCHAR(255),
     term_phone VARCHAR(255),
     create_date TIMESTAMP,
+    PRIMARY KEY (id)
+);
+
+/* ORDER EXTRAS TABLE */
+CREATE TABLE moneybag.mb_extra (
+    id INT NOT NULL AUTO_INCREMENT,
+    extra_name VARCHAR(255),
+    extra_description VARCHAR(255),
+    extra_cost DECIMAL(50,8),
     PRIMARY KEY (id)
 );
 
@@ -89,13 +90,13 @@ CREATE TABLE moneybag.mb_orders (
     amount_dsl2dye INT,
     amount_dsl2pdfclr INT,
     amount_dsl2pdfdye INT,
-    pump INT,
-    drops INT,
+    extra_id INT,
     freight_rate_gas VARCHAR(255),
     freight_rate_dist VARCHAR(255),
     create_date TIMESTAMP,
     PRIMARY KEY (id),
     FOREIGN KEY (client_id) REFERENCES mb_clients(id), 
     FOREIGN KEY (terminal_id) REFERENCES mb_terminals(id), 
-    FOREIGN KEY (driver_id) REFERENCES mb_drivers(id)
+    FOREIGN KEY (driver_id) REFERENCES mb_drivers(id),
+    FOREIGN KEY (extra_id) REFERENCES mb_extra(id)
 );
