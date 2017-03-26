@@ -17,12 +17,20 @@ ol {
 
 body {
   font-family: "Fira Sans Condensed", sans-serif;
-  background-color: #CEE332; }
+  background-color: #CEE332;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; }
 
 #login {
   text-align: center;
-  width: 35%;
-  height: 27%;
+  width: 35% !important;
+  height: 27% !important;
   border: 1px solid #000;
   position: absolute;
   top: 0;
@@ -49,6 +57,41 @@ body {
   background-color: #6B7F8C; }
   #login .btn:hover {
     background-color: #a4b1b9; }
+
+ul.mb-links {
+  list-style-type: none; }
+
+ul.mb-links li {
+  text-align: center;
+  padding-bottom: 25px; }
+
+a.mb-link {
+  /* Normalize */
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  padding: 7px 25px;
+  color: #fafbfc;
+  background-color: #6B7F8C;
+  text-decoration: none;
+  border-radius: 15px; }
+  a.mb-link:hover {
+    background-color: #a4b1b9; }
+
+#order {
+  width: 45%;
+  height: 45%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 7px;
+  margin: auto; }
+
+.customer-info {
+  padding-bottom: 20px; }
 
 ui-autocomplete {
   max-height: 100px;
