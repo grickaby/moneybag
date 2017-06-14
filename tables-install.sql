@@ -19,6 +19,7 @@ CREATE TABLE moneybag.mb_drivers (
     email VARCHAR(255),
     username VARCHAR(255),
     passwd VARCHAR(255),
+    pass_hash VARCHAR(255),
     address TEXT,
     pay_rate DECIMAL(50,3),
     pay_ratesun DECIMAL(50,3),

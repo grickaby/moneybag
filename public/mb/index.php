@@ -1,7 +1,7 @@
-<?php 
-    //session_start();
-    //$_SESSION['username'];
-    //$_SESSION['user_id'];
+<?php
+session_start();
+echo $_SESSION['session_id'];
+echo $_SESSION['session_name'];
 ?>
 <!DOCTYPE html>
 <html>
