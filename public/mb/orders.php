@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+$session_id = $_SESSION['session_id'];
+$session_name = $_SESSION['session_name'];
+
+
+?>
 <!DOCTYPE html>
 <html>
     <head>

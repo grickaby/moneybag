@@ -40,6 +40,16 @@ body {
     margin: auto;   
 }
 
+.red {
+    color:red;
+    background: url("../images/red-arrow.png") no-repeat left center;
+    padding-left:25px;
+}
+.green {
+    color: #0ea600;
+    background: url("../images/green-arrow.png") no-repeat left center;
+    padding-left:25px;
+}
 #login {
     text-align: center;
     width: 50% !important;

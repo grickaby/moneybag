@@ -1,7 +1,10 @@
 <?php
 session_start();
-echo $_SESSION['session_id'];
-echo $_SESSION['session_name'];
+
+$session_id = $_SESSION['session_id'];
+$session_name = $_SESSION['session_name'];
+
+require '../assets/class_stocks.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,6 +15,9 @@ echo $_SESSION['session_name'];
         <link href="../css/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+        <div class="prices">
+            Gasoline: <?php $Stocks->displayPrice('UGA', 'S72D0SUS99HASM98'); ?>
+        </div>
         <ul class="mb-links">
             <li><a href="orders.php" class="mb-link">Input Order</a></li>
             <li><a href="profile.php" class="mb-link">Profile</a></li>
