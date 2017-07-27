@@ -2,6 +2,9 @@
 
 /*
  * This uses Alpha Vantage API to get current stock prices
+ * 
+ * Use: <?php $Stocks->displayPrice('RBQ17%2ENYM', 'S72D0SUS99HASM98'); ?>
+ * 
  */
 
 Class Stock {
@@ -29,7 +32,7 @@ Class Stock {
         $json = json_decode($result, true);
         
         $openPrice = array_shift($json["Time Series (Daily)"]);
-        $listPrice = $openPrice["1. open"];
+        $listPrice = $openPrice["4. close"];
         
         return $listPrice;
     }
