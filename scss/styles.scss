@@ -14,6 +14,8 @@ $brown: #5E5E38;
 $grey: #BDC797;
 $teal: #E6FDCA;
 $green: #CEE332;
+$white: #ffffff;
+$black: #000000;
 
 
 //MAIN STYLES
@@ -28,16 +30,7 @@ ol {
 
 body {
     font-family: $font;
-    background-color: $green;
-
-    width:50%;
-    height:50%;
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;   
+    background-color: $green;  
 }
 
 .red {
@@ -108,4 +101,52 @@ ui-autocomplete {
 }
 .ui-autocomplete-loading {
     background: white url("../images/spinner.gif") right center no-repeat;
+}
+.main {
+    padding-top:70px;
+}
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    padding:7px;
+    border-bottom:1px solid $blue;
+    @include linearGradient($blue, #60727e);
+    
+    .left {
+        float:left;
+        width:50%;
+    }
+    
+    .right {
+        float:right;
+        text-align: right;
+        width:50%;
+    }
+    
+    a {
+        color: $white;
+        text-decoration: none;
+        margin-right:10px;
+        
+        &:hover {
+            color:$black;
+        }
+        &:visited {
+            color: $white;
+        }
+    }
+    
+    button {
+        background: none;
+        border:1px solid $blue;
+        padding:7px;
+        border-radius:5px;
+        
+        &:hover {
+            background:#60727e;
+        }
+    }
 }

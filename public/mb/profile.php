@@ -10,8 +10,19 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+        <div class="navbar">
+            <div class="left">
+                <button onclick="window.history.back()"><<<</button>
+            </div>
+            <div class="right">
+                <a href="index.php">Home</a>
+            </div>
+        </div>
+        <div class="main">
+            
+            
+            
+            
+        </div>
     </body>
 </html>

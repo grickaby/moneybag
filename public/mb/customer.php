@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
 
     $columns = implode(', ', array_keys($_POST));
     $values = implode(', ', array_values($_POST));
-    
+
     print_r($columns);
     print_r($values);
 
@@ -117,22 +117,30 @@ function checkSelect($i, $m, $e = true) {
         <link href="../css/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
+        <div class="navbar">
+            <div class="left">
+                <button onclick="window.history.back()"><<<</button>
+            </div>
+            <div class="right">
+                <a href="index.php">Home</a>
+            </div>
+        </div>
+        <div class="main">
+            <form method="post">
+                <label for="customer-name">Customer Name:</label><input type="textbox" id="customer-name" name="c_name"><br/>
+                <label for="customer-number">Customer Number:</label><input type="textbox" id="customer-number" name="c_number"><br/>
+                <label for="customer-address">Customer Address:</label><input type="textbox" id="customer-address" name="c_address"><br/>
+                <label for="customer-city">Customer City:</label><input type="textbox" id="customer-city" name="c_city"><br/>
+                <label for="customer-state">Customer State:</label><select id="customer-state" name="c_state"><?php stateDropdown(); ?></select><br/>
+                <label for="customer-zip">Customer Zip:</label><input type="textbox" id="customer-zip" name="c_zip"><br/>
+                <label for="customer-gas">Customer Gas Price:</label><input type="textbox" id="customer-gas" name="price_gas"><br/>
+                <label for="customer-diesel">Customer Diesel Price:</label><input type="textbox" id="customer-diesel" name="price_distillate"><br/>
+                <input type="submit" class="btn" name="submit">
 
-        <form method="post">
-            <label for="customer-name">Customer Name:</label><input type="textbox" id="customer-name" name="c_name"><br/>
-            <label for="customer-number">Customer Number:</label><input type="textbox" id="customer-number" name="c_number"><br/>
-            <label for="customer-address">Customer Address:</label><input type="textbox" id="customer-address" name="c_address"><br/>
-            <label for="customer-city">Customer City:</label><input type="textbox" id="customer-city" name="c_city"><br/>
-            <label for="customer-state">Customer State:</label><select id="customer-state" name="c_state"><?php stateDropdown(); ?></select><br/>
-            <label for="customer-zip">Customer Zip:</label><input type="textbox" id="customer-zip" name="c_zip"><br/>
-            <label for="customer-gas">Customer Gas Price:</label><input type="textbox" id="customer-gas" name="price_gas"><br/>
-            <label for="customer-diesel">Customer Diesel Price:</label><input type="textbox" id="customer-diesel" name="price_distillate"><br/>
-            <input type="submit" class="btn" name="submit">
 
+            </form>
 
-        </form>
-
-
+        </div>
 
     </body>
 </html>

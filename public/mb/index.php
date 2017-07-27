@@ -15,12 +15,22 @@ require '../assets/class_stocks.php';
         <link href="../css/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        
-        <ul class="mb-links">
-            <li><a href="orders.php" class="mb-link">Input Order</a></li>
-            <li><a href="profile.php" class="mb-link">Profile</a></li>
-            <li><a href="customer.php" class="mb-link">Add/Modify Customer</a></li>
-            <li><a href="regulations.php" class="mb-link">Regulations</a></li>
-        </ul>
+        <div class="navbar">
+            <div class="left">
+                <button onclick="window.history.back()"><<<</button>
+            </div>
+            <div class="right">
+                <a href="index.php">Home</a>
+            </div>
+        </div>
+        <div class="main">
+            <ul class="mb-links">
+                <li><a href="orders.php" class="mb-link">Input Order</a></li>
+                <li><a href="profile.php" class="mb-link">Profile</a></li>
+                <li><a href="customer.php" class="mb-link">Add/Modify Customer</a></li>
+                <li><a href="regulations.php" class="mb-link">Regulations</a></li>
+                <li><a href="../index.php" class="mb-link">Logout</a></li>
+            </ul>
+        </div>
     </body>
 </html>

@@ -17,15 +17,7 @@ ol {
 
 body {
   font-family: "Fira Sans Condensed", sans-serif;
-  background-color: #CEE332;
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto; }
+  background-color: #CEE332; }
 
 .red {
   color: red;
@@ -111,5 +103,54 @@ ui-autocomplete {
 
 .ui-autocomplete-loading {
   background: white url("../images/spinner.gif") right center no-repeat; }
+
+.main {
+  padding-top: 70px; }
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 7px;
+  border-bottom: 1px solid #6B7F8C;
+  background: #6B7F8C;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #6B7F8C 0%, #60727e 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6B7F8C), color-stop(100%, #60727e));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #6B7F8C 0%, #60727e 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #6B7F8C 0%, #60727e 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #6B7F8C 0%, #60727e 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #6B7F8C 0%, #60727e 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */ }
+  .navbar .left {
+    float: left;
+    width: 50%; }
+  .navbar .right {
+    float: right;
+    text-align: right;
+    width: 50%; }
+  .navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px; }
+    .navbar a:hover {
+      color: #000000; }
+    .navbar a:visited {
+      color: #ffffff; }
+  .navbar button {
+    background: none;
+    border: 1px solid #6B7F8C;
+    padding: 7px;
+    border-radius: 5px; }
+    .navbar button:hover {
+      background: #60727e; }
 
 /*# sourceMappingURL=styles.css.map */
