@@ -5,9 +5,11 @@
 //IMPORTS
 @import "mixins";
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 //DEFAULT COLORS
 $font: 'Fira Sans Condensed', sans-serif;
+$font2: 'Roboto', sans-serif;
 
 $blue: #6B7F8C;
 $brown: #5E5E38;
@@ -19,15 +21,6 @@ $black: #000000;
 
 
 //MAIN STYLES
-*,
-html,
-body,
-ul,
-ol {
-    margin:0;
-    padding:0;
-}
-
 body {
     font-family: $font;
     background-color: $green;  
@@ -42,6 +35,9 @@ body {
     color: #0ea600;
     background: url("../images/green-arrow.png") no-repeat left center;
     padding-left:25px;
+}
+#load-calc {
+    font-family: $font2;
 }
 #login {
     text-align: center;

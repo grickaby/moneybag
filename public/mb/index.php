@@ -12,6 +12,7 @@ require '../assets/class_stocks.php';
         <meta charset="UTF-8">
         <meta http-equiv="Content-Language" content="en">
         <title>Driver Panel</title>
+        <link href="../css/ratchet.min.css" rel="stylesheet" type="text/css"/>
         <link href="../css/styles.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
@@ -29,6 +30,7 @@ require '../assets/class_stocks.php';
                 <li><a href="profile.php" class="mb-link">Profile</a></li>
                 <li><a href="customer.php" class="mb-link">Add/Modify Customer</a></li>
                 <li><a href="regulations.php" class="mb-link">Regulations</a></li>
+                <li><a href="calculator.php" class="mb-link">Calculator</a></li>
                 <li><a href="../index.php" class="mb-link">Logout</a></li>
             </ul>
         </div>

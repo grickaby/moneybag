@@ -7,14 +7,7 @@
     Author     : grick
 */
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed");
-*,
-html,
-body,
-ul,
-ol {
-  margin: 0;
-  padding: 0; }
-
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 body {
   font-family: "Fira Sans Condensed", sans-serif;
   background-color: #CEE332; }
@@ -28,6 +21,9 @@ body {
   color: #0ea600;
   background: url("../images/green-arrow.png") no-repeat left center;
   padding-left: 25px; }
+
+#load-calc {
+  font-family: "Roboto", sans-serif; }
 
 #login {
   text-align: center;
